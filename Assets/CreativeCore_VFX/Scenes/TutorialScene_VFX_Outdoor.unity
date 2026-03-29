@@ -6131,7 +6131,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100006, guid: a45a25ec0193de54fbd3efca6e19755e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 529829198}
+      addedObject: {fileID: 529829201}
   m_SourcePrefab: {fileID: 100100000, guid: a45a25ec0193de54fbd3efca6e19755e, type: 3}
 --- !u!4 &456836519 stripped
 Transform:
@@ -6164,7 +6164,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: a45a25ec0193de54fbd3efca6e19755e, type: 3}
   m_PrefabInstance: {fileID: 456836518}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &529829198
+--- !u!114 &529829201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6175,8 +6175,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f22fef577adb18439baf04ce4a1f842, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleSwordEffect
-  VFXObject: {fileID: 2046102419}
+  m_EditorClassIdentifier: Assembly-CSharp::SwordVFXToggle
+  swordVFX: {fileID: 2046102422}
+  alphaClipParam: Alfa Clipping
+  colorParam: Color
+  fadeDuration: 2
+  enabledAlphaClip: 0.05
+  disabledAlphaClip: 1
+  enabledColor: {r: 0, g: 2.0078433, b: 383.49805, a: 1}
+  disabledColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &550232225
 GameObject:
   m_ObjectHideFlags: 0
@@ -7034,8 +7041,15 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f22fef577adb18439baf04ce4a1f842, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleSwordEffect
-  VFXObject: {fileID: 1199220258}
+  m_EditorClassIdentifier: Assembly-CSharp::SwordVFXToggle
+  swordVFX: {fileID: 1199220261}
+  alphaClipParam: Alfa Clipping
+  colorParam: Color
+  fadeDuration: 2
+  enabledAlphaClip: 0.05
+  disabledAlphaClip: 1
+  enabledColor: {r: 24.094118, g: 383.49805, b: 0, a: 1}
+  disabledColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &799962697
 GameObject:
   m_ObjectHideFlags: 0
@@ -9701,7 +9715,13 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 0.05
+        m_Name: Alfa Cliping
+        m_Overridden: 1
+      - m_Value: 0.25
+        m_Name: RotationSpeed
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
